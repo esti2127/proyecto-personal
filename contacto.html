@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+
+    <h1 id="form-titulo" class="titulo">Formulario de contacto</h1>
+
+    <form action="/enviar-datos" method="post" enctype="multipart/form-data">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required><br><br>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required><br><br>
+
+    
+      <label for="región">Región:</label>
+      <select id="región" name="pais">
+          <option value="bi">Bizkaia</option>
+          <option value="SS">Gipuzkoa</option>
+          <option value="vi">Álava</option>
+      </select><br><br>
+
+      <p id="destacado">Género:</p>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br><br>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea><br><br>
+
+        <input class="blue-input" type="submit" value="Enviar">
+
+    </form>
+  
+</body>
+</html>

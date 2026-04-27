@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.links {
+  margin: 50px;
+  border: 0.1rem solid;
+  border-radius: 8px;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  /*align-items: center;*/
+
+
+}
+
+.encabezado {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 44px;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 12px;
+  margin-left:10px;
+}
+
+.menu {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+ 
+}
+
+article {
+  overflow: auto;
+  margin:20px;
+}
+
+.nav-links {
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+ 
+  
+}
+
+li {
+  margin:12px;
+}
+
+a {
+  color: black;
+  font-size:20px;
+}
+
+a:hover {
+  color: rgb(0, 159, 228);
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.contenido {
+  display:flex;
+  flex-direction:column;
+  margin-left:30px;
+  margin-top: 10px;
+}
+
+.contfoto img {
+  max-width:100%;
+  height: auto;
+  display:block;
+}
+
+.description {
+  width: 80%;
+}
+
+#biografia {
+  margin-bottom: 12px;
+}
+
+#biotext {
+  margin-bottom: 12px;
+
+}
+.extra {
+  position: relative;
+  top:12px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 gainsboro;
+  padding: 20px;
+
+}
+
+#destacado {
+  text-decoration: underline;
+}
+
+.blue-input:focus {
+  background:rgb(0, 159, 228);
+  color:white;
+
+}
+
+body {
+
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+    padding:20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 gainsboro; 
+  }
+
+#form-titulo {
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: Helvetica, sans-serif;
+}
+
+/* ===================768px======================== */
+
+@media screen and (min-width:768px){/*768 px*/
+
+  .encabezado {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap:20px;
+    margin-left: 30px;
+  }
+
+  .contenido {
+    flex-direction: row;
+  }
+
+  .extra {
+    margin:20px;
+  }
+
+  .links {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  }
+
+
+
+/* ===================992px======================== */
+
+@media screen and (min-width:992px){}/*992 px*/
+
+
+/* ===================992px======================== */
+
+@media screen and (min-width:992px){}/*992 px*/
